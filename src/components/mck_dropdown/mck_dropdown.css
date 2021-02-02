@@ -1,0 +1,109 @@
+.mck-dropdown-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1vh;
+    user-select: none;
+}
+
+.mck-dropdown-label {
+    height: 5vh;
+    width: 7.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.mck-dropdown-container {
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
+}
+
+.mck-dropdown-container:focus-within {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 1px;
+}
+
+.mck-dropdown-select-box {
+    width: 20vh;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    cursor: pointer;
+}
+
+.mck-dropdown-select-container {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+    margin: 0;
+    max-height: 0vh;
+    overflow-y: auto;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
+}
+
+.show {
+    max-height: 30vh;
+}
+
+.mck-dropdown-select-container > li {
+    padding: 10px;
+}
+
+.mck-dropdown-select-container > li:hover {
+    background-color: #1858ac;
+    color: #fff;
+}
+
+.mck-dropdown-select-container > li:focus {
+    border: none;
+    background-color: #0f3a72;
+    color: #fff;
+}
+
+.caret-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px  solid transparent;
+    border-top: 7.5px solid black;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
+}
+
+.caret-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px  solid transparent;
+    border-top: 7.5px solid black;
+    transform: rotate(180deg);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+    box-shadow: -10px 10px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
